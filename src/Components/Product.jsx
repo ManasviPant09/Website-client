@@ -15,7 +15,7 @@ const Product = ({ item }) => {
           <ShoppingCartOutlinedIcon />
         </Icon>
         <Icon>
-          <Link to= {`/product/${item._id}`} style={{color: "black"}}><SearchOutlinedIcon /></Link>
+          <Link to= {`https://website-api-i932.onrender.com/product/${item._id}`} style={{color: "black"}}><SearchOutlinedIcon /></Link>
         </Icon>
         <Icon>
           <FavoriteBorderOutlinedIcon />
