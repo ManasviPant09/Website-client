@@ -21,7 +21,7 @@ const Product = () => {
   useEffect(()=>{
     const getProduct = async ()=>{
       try{
-        const res = await publicRequest.get("/products/find/"+id)
+        const res = await publicRequest.get("https://website-api-i932.onrender.com/products/find/"+id)
         setProduct(res.data);
       }
       catch(err){
