@@ -25,7 +25,7 @@ const Cart = () => {
   useEffect(() => {
     const makeRequest = async () => {
       try {
-        const res = await userRequest.post("https://website-api-i932.onrender.com/checkout/payment", {
+        const res = await userRequest.post("https://website-api-i932.onrender.com/api/checkout/payment", {
           tokenId: stripeToken.id,
           amount: final,
         });
