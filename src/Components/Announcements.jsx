@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { mobile } from '../responsive';
+
 const Announcements = () => {
   return (
     <Container>Use Code &nbsp;<i>'SEASON20'</i>&nbsp;and get additional 20% OFF!

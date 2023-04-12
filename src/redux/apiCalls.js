@@ -5,7 +5,7 @@ import { loginStart,loginFailure, loginSuccess } from "./userSlice";
 export const login = async (dispatch,user) =>{
     dispatch(loginStart());
     try{
-        const res = await publicRequest.post("https://website-api-i932.onrender.com/auth/login",user);
+        const res = await publicRequest.post("https://website-api-i932.onrender.com/api/auth/login",user);
         dispatch(loginSuccess(res.data));
     }
     catch(err){
@@ -14,9 +14,10 @@ export const login = async (dispatch,user) =>{
 
 }
 export const register = async (dispatch,newUser) =>{
+    console.log(newUser);
     dispatch(registerStart());
     try{
-        const res = await publicRequest.post("https://website-api-i932.onrender.com/auth/register",newUser);
+        const res = await publicRequest.post("https://website-api-i932.onrender.com/api/auth/register",newUser);
         dispatch(registerSuccess(res.data));
     }
     catch(err){
